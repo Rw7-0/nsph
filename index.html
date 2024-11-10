@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calculatePercentage() {
+        var value = document.getElementById("valueInput").value;
+        var percentage = document.getElementById("percentageInput").value;
+        var result = value * (percentage / 100);
+        document.getElementById("result").innerHTML = "النسبة هي: " + result;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label for="valueInput">حدد القيمة:</label>
+      <input type="number" id="valueInput" placeholder="حدد القيمة" /><br />
+
+      <label for="percentageInput">حدد النسبة:</label>
+      <input
+        type="number"
+        id="percentageInput"
+        placeholder="حدد النسبة"
+      /><br />
+
+      <button id="submitBtn" onclick="calculatePercentage()">ارسل</button><br />
+
+      <p id="result"></p>
+      <h1 id="Rw7">
+        my Rw7 web
+        <a
+          id="Rw"
+          target="_blank"
+          href="https://discord.com/channels/1305237746649923697/1305237989877747724"
+          >discord</a
+        >
+      </h1>
+    </div>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: fixed;
+      height: 70vh;
+      background-size: cover;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #result {
+      margin-top: 20px;
+    }
+    #valueInput {
+      width: 80px;
+      height: 30px;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    #percentageInput {
+      width: 80px;
+      height: 30px;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    #submitBtn {
+      padding: 5px 15px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #submitBtn:hover {
+      background: #45a049;
+    }
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="number"] {
+      width: 100px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    #Rw7 {
+      font-size: 30px;
+      color: black;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    #Rw {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</html>
